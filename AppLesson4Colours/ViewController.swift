@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         paletteView.layer.cornerRadius = 25
-        setInitialOutlets()
+        setInitialValues()
         setPaletteColour()
     }
 
@@ -50,9 +50,9 @@ extension ViewController {
         )
     }
 }
-
+//MARK: Set initial values to labels
 extension ViewController {
-    private func setInitialOutlets() {
+    private func setInitialValues() {
         redValueLabel.text = String(format: "%.2f", redSliderOutlet.value)
         greenValueLabel.text = String(format: "%.2f", greenSliderOutlet.value)
         blueValueLabel.text = String(format: "%.2f", blueSliderOutlet.value)
